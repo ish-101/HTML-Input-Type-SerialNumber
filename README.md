@@ -73,11 +73,11 @@ __`separator:`__ This property can be defined for the whole input box in general
 
 __`pieces:`__ This is an array of the __`piece`__ objects.
 
-    __`length:`__ A positive integer denoting the number of character in a piece. (Default value is `1`)
+   __`length:`__ A positive integer denoting the number of character in a piece. (Default value is `1`)   
 
-    __`pattern:`__ A [Regular Expression](https://www.w3schools.com/jsref/jsref_obj_regexp.asp) which defines the allowed characters in a piece.
+   __`pattern:`__ A [Regular Expression](https://www.w3schools.com/jsref/jsref_obj_regexp.asp) which defines the allowed characters in a piece.   
 
-    __`type:`__ Should be set to `separator` to add a separator, or else, should be left blank. 
+   __`type:`__ Should be set to `separator` to add a separator, or else, should be left blank.    
 
 ## Information
 Made as a plugin for jQuery
