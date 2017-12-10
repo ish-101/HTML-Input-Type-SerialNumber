@@ -1,9 +1,11 @@
 /*
   HTML Input Type SerialNumber
-  by Ishpreet Singh Bhasin (ish-101)
   GitHub: https://github.com/ish-101/HTML-Input-Type-SerialNumber
-
   Dependency: jQuery 3.x.x
+  License:  GNU GENERAL PUBLIC LICENSE Version 3
+
+  Made by Ishpreet Singh Bhasin (ish-101)
+  Website: http://ishpreet.tech/
 */
 
 (function($)
