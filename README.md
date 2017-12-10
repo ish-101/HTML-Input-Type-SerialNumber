@@ -15,7 +15,7 @@ Since both these features LIVE, this software __assists__ the user while filling
 ```
 2. Download and link jquery.serialnumber.js to the head of the page
 ```html
-<script type="text/javascript" src="../src/jquery.serialnumber.js"></script>
+<script type="text/javascript" src="jquery.serialnumber.js"></script>
 ```
 3. Add this script anywhere on the page. Configure it according to your needs.
 ```html
@@ -23,7 +23,7 @@ Since both these features LIVE, this software __assists__ the user while filling
 	$("input[type='serialnumber']").serialnumberinput(
 	{
 		/*
-		 The following configuration would allow a serial number of the format 12-34\AB-CD
+		 The following configuration would allow a serial number in the format 12-34\AB-CD
 		 */
 		"separator": "-",
 		"pieces":
@@ -58,7 +58,7 @@ Since both these features LIVE, this software __assists__ the user while filling
 	});
 </script>
 ```
-4. Use the input type "serialnumber" anywhere in the page to test it.
+4. Use the input type "serialnumber" anywhere in the page to test if it works.
 ```html
 <input type="serialnumber">
 ```
