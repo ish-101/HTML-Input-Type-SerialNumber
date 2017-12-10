@@ -3,10 +3,15 @@
 <head>
 	<title>HTML Input Type SerialNumber - Demo</title>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../src/jquery.serialnumber.js"></script>
+	<script type="text/javascript" src="../src/jquery.serialnumberinput.js"></script>
 </head>
 <body>
+	<h1>HTML-Input-Type-SerialNumber</h1>
+	<hr>
+	<h2>Demo</h2>
+	<hr>
 	<p>Enter a Serial Number in the format <b>12-34\AB-CD</b></p>
+	<p style="color: red;">Anything else would lead to deletion of the entered character.</p>
 	<input type="serialnumber">
 	<script type="text/javascript">
 		$("input[type='serialnumber']").serialnumberinput(

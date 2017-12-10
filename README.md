@@ -18,9 +18,9 @@ Since both these features LIVE, this software __assists__ the user while filling
 ```html
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 ```
-2. Download and link jquery.serialnumber.js to the head of the page
+2. Download and link jquery.serialnumberinput.js to the head of the page
 ```html
-<script type="text/javascript" src="jquery.serialnumber.js"></script>
+<script type="text/javascript" src="jquery.serialnumberinput.js"></script>
 ```
 3. Add this script anywhere on the page. Configure it according to your needs.
 ```html
