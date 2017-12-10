@@ -9,7 +9,52 @@ Some Serial Numbers have separating characters, such as dashes, between the piec
 Since both these features LIVE, this software __assists__ the user while filling out the Serial Number, instead of simply pointing out that it was wrong.
 
 ## Installation
-Link jQuery version 3.x.x in the head of the page, if not already linked.
+1. Link jQuery version 3.x.x to the head of the page (if not already linked)
 ```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+```
+2. Download and link jquery.serialnumber.js to the head of the page
+```html
+<script type="text/javascript" src="../src/jquery.serialnumber.js"></script>
+```
+3. Add this script anywhere on the page.
+```html
+<script type="text/javascript">
+	$("input[type='serialnumber']").serialnumberinput(
+	{
+		/*
+		 The following configuration would allow a serial number of the format 12-34\AB-CD
+		 */
+		"separator": "-",
+		"pieces":
+		[
+			{
+				"length": 2,
+				"pattern": "[0-9]",
+			},
+			{
+				"type": "separator",
+			},
+			{
+				"length": 2,
+				"pattern": "[0-9]",
+			},
+			{
+				"type": "separator",
+				"separator": "\\",
+			},
+			{
+				"length": 2,
+				"pattern": "[a-zA-Z]",
+			},
+			{
+				"type": "separator",
+			},
+			{
+				"length": 2,
+				"pattern": "[a-zA-Z]",
+			},
+		],
+	});
+</script>
 ```
