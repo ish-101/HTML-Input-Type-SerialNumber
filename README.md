@@ -11,7 +11,7 @@ Some Serial Numbers have separating characters, such as dashes, between the piec
 
 Since both these features LIVE, this software __assists__ the user while filling out the Serial Number, instead of simply pointing out that it was wrong.
 
-## DEMO
+## [DEMO](http://ishpreet.tech/projects/HTML-Input-Type-SerialNumber/demo)
 
 ## Installation
 1. Link jQuery version 3.x.x to the head of the page (if not already linked)

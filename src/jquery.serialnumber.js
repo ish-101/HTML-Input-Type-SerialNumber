@@ -109,6 +109,6 @@
 		{
 			main(e.key);
 		});
-		return {options, digits};
+		return;
 	};
 }(jQuery));
