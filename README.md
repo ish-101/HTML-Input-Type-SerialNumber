@@ -70,16 +70,23 @@ Since both these features LIVE, this software __assists__ the user while filling
 
 ## Configuration
 __`separator:`__ This property can be defined for the whole input box in general, or specially for each separator. Specific definitions override the general ones. (Default value is an empty string `""`)
+
 __`pieces:`__ This is an array of the __`piece`__ objects.
+
 -------__`length:`__ A positive integer denoting the number of character in a piece. (Default value is `1`)
+
 -------__`pattern:`__ A [Regular Expression](https://www.w3schools.com/jsref/jsref_obj_regexp.asp) which defines the allowed characters in a piece.
+
 -------__`type:`__ Should be set to `separator` to add a separator, or else, should be left blank. 
 
 ## Information
 Made as a plugin for jQuery
+
 Dependent on jQuery version 3.x.x
 
 ## Creator
 __Made By:__ _Ishpreet Singh Bhasin_
+
 [__Website__](http://ishpreet.tech/)
+
 [__GitHub__](https://github.com/ish-101/)
