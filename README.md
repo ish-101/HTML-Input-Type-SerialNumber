@@ -76,17 +76,17 @@ Since both these features LIVE, this software __assists__ the user while filling
 
    a. __`length:`__ A positive integer denoting the number of character in a piece. (Default value is `1`)   
 
-   b. __`pattern:`__ A [Regular Expression](https://www.w3schools.com/jsref/jsref_obj_regexp.asp) which defines the allowed characters in a piece.   
+   b. __`pattern:`__ A [Regular Expression](https://www.regular-expressions.info/) which defines the allowed characters in a piece.   
 
    c. __`type:`__ Should be set to `separator` to add a separator, or else, should not be set at all.    
 
 ## Information
-Made as a plugin for jQuery
+Made as a plugin to [jQuery](https://jquery.com/)
 
-Dependent on jQuery version 3.x.x
+Dependent on [jQuery version 3.x.x](https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js)
 
 ## Creator
-__Made By:__ _Ishpreet Singh Bhasin_
+_Ishpreet Singh Bhasin_
 
 [__Website__](http://ishpreet.tech/)
 
