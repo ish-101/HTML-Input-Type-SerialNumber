@@ -78,7 +78,7 @@ Since both these features LIVE, this software __assists__ the user while filling
 
    b. __`pattern:`__ A [Regular Expression](https://www.w3schools.com/jsref/jsref_obj_regexp.asp) which defines the allowed characters in a piece.   
 
-   c. __`type:`__ Should be set to `separator` to add a separator, or else, should be left blank.    
+   c. __`type:`__ Should be set to `separator` to add a separator, or else, should not be set at all.    
 
 ## Information
 Made as a plugin for jQuery
