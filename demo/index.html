@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Input Type SerialNumber - Demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../src/jquery.serialnumber.js"></script>
+</head>
+<body>
+	<input type="serialnumber">
+	<script type="text/javascript">
+		$("input[type='serialnumber']").serialnumberinput(
+		{
+			/*
+			 The following configuration would allow a serial number of the format 12-34\AB-CD
+			 */
+			"separator": "-",
+			"pieces":
+			[
+				{
+					"length": 2,
+					"pattern": "[0-9]",
+				},
+				{
+					"type": "separator",
+				},
+				{
+					"length": 2,
+					"pattern": "[0-9]",
+				},
+				{
+					"type": "separator",
+					"separator": "\\",
+				},
+				{
+					"length": 2,
+					"pattern": "[a-zA-Z]",
+				},
+				{
+					"type": "separator",
+				},
+				{
+					"length": 2,
+					"pattern": "[a-zA-Z]",
+				},
+			],
+		});
+	</script>
+</body>
+</html>
