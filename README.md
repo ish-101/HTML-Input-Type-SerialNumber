@@ -7,3 +7,9 @@ It test for the Regular Expression separately on separate pieces of the input, i
 Some Serial Numbers have separating characters, such as dashes, between the pieces. This input field __automatically adds__ those separators wherever required.
 
 Since both these features LIVE, this software __assists__ the user while filling out the Serial Number, instead of simply pointing out that it was wrong.
+
+## Installation
+Link jQuery version 3.x.x in the head of the page, if not already linked.
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+```
