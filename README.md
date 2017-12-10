@@ -17,7 +17,7 @@ Since both these features LIVE, this software __assists__ the user while filling
 ```html
 <script type="text/javascript" src="../src/jquery.serialnumber.js"></script>
 ```
-3. Add this script anywhere on the page.
+3. Add this script anywhere on the page. Configure it according to your needs.
 ```html
 <script type="text/javascript">
 	$("input[type='serialnumber']").serialnumberinput(
@@ -57,4 +57,8 @@ Since both these features LIVE, this software __assists__ the user while filling
 		],
 	});
 </script>
+```
+4. Use the input type "serialnumber" anywhere in the page to test it.
+```html
+<input type="serialnumber">
 ```
