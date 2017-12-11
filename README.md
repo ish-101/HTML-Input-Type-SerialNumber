@@ -1,5 +1,5 @@
 # HTML Input Type SerialNumber
-A new type of HTML Input field which is specially built for Serial Numbers. It assists the user while filling out the input field LIVE.
+A widget that assists users while filling out HTML Input fields intended for Serial Numbers.
 
 ## _LIVE_ Pattern Matching and Auto Completion
 
@@ -9,7 +9,7 @@ It test for the Regular Expression separately on separate pieces of the input, i
 ### Auto Completion
 Some Serial Numbers have separating characters, such as dashes, between the pieces. This input field __automatically adds__ those separators wherever required.
 
-Since both these features LIVE, this software __assists__ the user while filling out the Serial Number, instead of simply pointing out that it was wrong.
+Since both these features LIVE, this widget __assists__ the user while filling out the Serial Number, instead of simply pointing out that it was wrong.
 
 ## [DEMO](http://ishpreet.tech/projects/HTML-Input-Type-SerialNumber/demo)
 
@@ -28,13 +28,13 @@ Since both these features LIVE, this software __assists__ the user while filling
 	$("input[type='serialnumber']").serialnumberinput(
 	{
 		/*
-		 The following configuration would allow a serial number in the format 12-34\AB-CD
+		 The following configuration would allow a serial number of the format 000\00\A
 		 */
-		"separator": "-",
+		"separator": "\\",
 		"pieces":
 		[
 			{
-				"length": 2,
+				"length": 3,
 				"pattern": "[0-9]",
 			},
 			{
@@ -46,17 +46,9 @@ Since both these features LIVE, this software __assists__ the user while filling
 			},
 			{
 				"type": "separator",
-				"separator": "\\",
 			},
 			{
-				"length": 2,
-				"pattern": "[a-zA-Z]",
-			},
-			{
-				"type": "separator",
-			},
-			{
-				"length": 2,
+				"length": 1,
 				"pattern": "[a-zA-Z]",
 			},
 		],
@@ -90,4 +82,4 @@ _Ishpreet Singh Bhasin_
 
 [__Website__](http://ishpreet.tech/)
 
-[__GitHub__](https://github.com/ish-101/)
+[__GitHub__](https://github.com/ish-101)
