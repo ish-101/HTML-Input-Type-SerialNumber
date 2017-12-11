@@ -9,7 +9,7 @@ It test for the Regular Expression separately on separate pieces of the input, i
 ### Auto Completion
 Some Serial Numbers have separating characters, such as dashes, between the pieces. This input field __automatically adds__ those separators wherever required.
 
-Since both these features LIVE, this widget __assists__ the user while filling out the Serial Number, instead of simply pointing out that it was wrong.
+Since both these features LIVE, this widget __assists__ the user while filling out the Serial Number, instead of simply pointing out that it was incorrectly formatted.
 
 ## [DEMO](http://ishpreet.tech/projects/HTML-Input-Type-SerialNumber/demo)
 
