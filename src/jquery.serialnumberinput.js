@@ -1,11 +1,12 @@
 /*
-  HTML Input Type SerialNumber
+  HTML Input Type SerialNumber - v1.0.0
+  License:  GNU GENERAL PUBLIC LICENSE Version 3
   GitHub: https://github.com/ish-101/HTML-Input-Type-SerialNumber
   Dependency: jQuery 3.x.x
-  License:  GNU GENERAL PUBLIC LICENSE Version 3
 
-  Made by Ishpreet Singh Bhasin (ish-101)
+  Made by Ishpreet Singh Bhasin
   Website: http://ishpreet.tech/
+  GitHub: https://github.com/ish-101
 */
 
 (function($)
@@ -54,60 +55,31 @@
 			'minlength': digits.length,
 			'maxlength': digits.length,
 		});
-		function main(key)
-		{
-			var x = target.val().split("");
-			var correct;
-			var recur = false;
-			if (x.length <= digits.length)
-			{
-				for (var i = 0; i < x.length; i++)
-				{
-					var regex_string;
-					if (options.pieces[digits[i]].type === "character")
-					{
-						regex_string = options.pieces[digits[i]].pattern;
-					}
-					if (options.pieces[digits[i]].type === "separator")
-					{
-						regex_string = "[\\" + options.pieces[digits[i]].separator + "]"; 
-					}
-					correct = RegExp(regex_string).test(x[i]);
-					if (!correct)
-					{
-						correct  = (options.pieces[digits[i]].type === "separator");
-						if (correct)
-						{
-							x[i+1] = x[i];
-							x[i] = options.pieces[digits[i]].separator;
-							recur = true;
-						}
-						else
-						{
-							break;
-						}
-					}
-				}
-				var y = x.join("");
-				if (!correct)
-				{
-					y = y.substring(0,i);
-				}
-				if ((x.length < digits.length) && ((key !== undefined) && ((key !== "Backspace") && (key !== "Delete"))) && (options.pieces[digits[x.length]].type === "separator"))
-				{
-					y += options.pieces[digits[x.length]].separator;
-					main();
-				}
-				target.val(y);
-				if (recur)
-				{
-					main();
-				}
-			}
-		}
 		target.on('keyup', function(e)
 		{
-			main(e.key);
+			var x = target.val().split("");
+			for (var i = 0; i < x.length; i++)
+			{
+				var reg_exp_pattern;
+				if (options.pieces[digits[i]].type !== "separator")
+				{
+					reg_exp_pattern = RegExp(options.pieces[digits[i]].pattern);
+				}
+				else
+				{
+					reg_exp_pattern = RegExp("[\\" + options.pieces[digits[i]].separator + "]");
+				}
+				if (! (reg_exp_pattern.test(x[i])) )
+				{
+					break;
+				}
+			}
+			if ((i < digits.length) && (options.pieces[digits[i]].type === "separator"))
+			{
+				x[i] = options.pieces[digits[i]].separator;
+				i++;
+			}
+			target.val(x.join("").substring(0, i));
 		});
 		return;
 	};
