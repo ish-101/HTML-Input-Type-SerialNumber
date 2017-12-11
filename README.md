@@ -63,9 +63,9 @@ Since both these features LIVE, this widget __assists__ the user while filling o
 
 ## Configuration
 
-1. __`separator:`__ Defines the character which should be automatically added as a separator.
+1. __`separator:`__ Defines the character which should be automatically added as a separator. (Default value is an empty string `""`)
 
-   __NOTE:__ The `separator` property can be defined for the whole input box in general, or specially for each separator. Specific definitions override the general ones. (Default value is an empty string `""`)   
+   __NOTE:__ The `separator` property can be defined for the whole input box in general, or specially for each separator. Specific definitions override the general ones.   
 
 2. __`pieces:`__ This is an array of __`piece`__ objects.
 
