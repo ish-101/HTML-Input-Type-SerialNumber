@@ -1,6 +1,6 @@
 {
   "name": "html-input-type-serialnumber",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A widget that assists users while filling out HTML Input fields intended for Serial Numbers.",
   "main": "src/jquery.serialnumberinput.js",
   "scripts": {

@@ -1,5 +1,5 @@
 /*
-  HTML Input Type SerialNumber - v1.0.0
+  HTML Input Type SerialNumber - v1.0.2
   License:  GNU GENERAL PUBLIC LICENSE Version 3
   GitHub: https://github.com/ish-101/HTML-Input-Type-SerialNumber
   Dependency: jQuery 3.x.x
