@@ -80,7 +80,7 @@ Made as a plugin to [jQuery](https://jquery.com/)
 
 Dependent on [jQuery version 3.x.x](https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js)
 
-## Creator
+## Developer
 _Ishpreet Singh Bhasin_
 
 [__Website__](http://ishpreet.tech/)
