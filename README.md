@@ -25,7 +25,7 @@ Since both these features LIVE, this widget __assists__ the user while filling o
 3. Add this script anywhere on the page. [Configure](#configuration) it according to your own needs.
 ```html
 <script type="text/javascript">
-	// If you want a separate configuration for each input box, you can replace the general input[type='serialnumber'] with specific IDs, Classes, etc.
+	// If you want a separate configuration for each input box, you can replace the general selector input[type='serialnumber'] with specific IDs, Classes, etc.
 	$("input[type='serialnumber']").serialnumberinput(
 	{
 		/*
