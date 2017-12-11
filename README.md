@@ -22,9 +22,10 @@ Since both these features LIVE, this widget __assists__ the user while filling o
 ```html
 <script type="text/javascript" src="jquery.serialnumberinput.js"></script>
 ```
-3. Add this script anywhere on the page. Configure it according to your needs.
+3. Add this script anywhere on the page. [Configure](#configuration) it according to your own needs.
 ```html
 <script type="text/javascript">
+	// If you want a separate configuration for each input box, you can replace the general input[type='serialnumber'] with specific IDs, Classes, etc.
 	$("input[type='serialnumber']").serialnumberinput(
 	{
 		/*
@@ -64,7 +65,7 @@ Since both these features LIVE, this widget __assists__ the user while filling o
 
 1. __`separator:`__ This property can be defined for the whole input box in general, or specially for each separator. Specific definitions override the general ones. (Default value is an empty string `""`)
 
-2. __`pieces:`__ This is an array of the __`piece`__ objects.
+2. __`pieces:`__ This is an array of __`piece`__ objects.
 
    a. __`length:`__ A positive integer denoting the number of character in a piece. (Default value is `1`)   
 

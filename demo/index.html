@@ -12,8 +12,10 @@
 	<hr>
 	<p>Enter a Serial Number in the format <b>000\00\A</b></p>
 	<p style="color: red;">Anything else would lead to deletion of the entered character.</p>
+	<p style="color: green;">The back-slash separator is added automatically.</p>
 	<input type="serialnumber">
 	<script type="text/javascript">
+		// If you want a separate configuration for each input box, you can replace the general input[type='serialnumber'] with specific IDs, Classes, etc.
 		$("input[type='serialnumber']").serialnumberinput(
 		{
 			/*
