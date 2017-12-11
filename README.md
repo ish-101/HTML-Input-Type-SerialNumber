@@ -13,6 +13,12 @@ Since both these features LIVE, this widget __assists__ the user while filling o
 
 ## [DEMO](http://ishpreet.tech/projects/HTML-Input-Type-SerialNumber/demo)
 
+## Node Package Manager
+To download using Node Package Manager, run the following command
+```
+npm install html-input-type-serialnumber
+```
+
 ## Installation
 1. Link jQuery version 3.x.x to the head of the page (if not already linked)
 ```html
