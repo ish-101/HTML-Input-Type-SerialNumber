@@ -1,0 +1,25 @@
+{
+  "name": "html-input-type-serialnumber",
+  "version": "1.0.0",
+  "description": "A widget that assists users while filling out HTML Input fields intended for Serial Numbers.",
+  "main": "src/jquery.serialnumberinput.js",
+  "scripts": {
+    "test": "$(\"\").serialnumberinput();"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ish-101/HTML-Input-Type-SerialNumber.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "input-validation",
+    "widget",
+    "html-input"
+  ],
+  "author": "Ishpreet Singh Bhasin",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ish-101/HTML-Input-Type-SerialNumber/issues"
+  },
+  "homepage": "https://github.com/ish-101/HTML-Input-Type-SerialNumber#readme"
+}
